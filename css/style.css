@@ -1,0 +1,266 @@
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --white-color: #ffffff;
+  --bg-text-color: rgba(47, 48, 58, 0.8);
+  --bg-footer-color: #2f303a;
+  --bg-team-color: #f5f4fa;
+  --address-text-color: rgba(255, 255, 255, 0.6);
+  --cards-bg-color: rgba(33, 150, 243, 0.9);
+  --filter-bg-color: #f5f4fa;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--primery-text-color);
+
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Site nav */
+
+.logo {
+  color: var(--accent-text-color);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.logo .studio {
+  color: var(--title-text-color);
+}
+
+.site-nav a {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-text-color);
+}
+
+.site-nav .current {
+  color: var(--accent-text-color);
+}
+
+/* Sing in */
+
+.auth-nav a {
+  color: var(--primery-text-color);
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.auth-nav a:hover,
+.auth-nav a:focus {
+  color: var(--accent-text-color);
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--bg-text-color);
+}
+
+.hero .title {
+  color: var(--white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button {
+  color: var(--white-color);
+  background-color: var(--accent-text-color);
+
+  font-family: Roboto;
+}
+
+.hero .button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* Work */
+
+.work p {
+  line-height: 1.71;
+}
+
+.work .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* What are we doing */
+
+.doing .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.doing .text {
+  color: var(--white-color);
+  background-color: var(--bg-text-color);
+
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Team */
+
+.team {
+  background-color: var(--bg-team-color);
+}
+
+.team .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.title.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team p {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* Clients */
+
+.clients .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.clients a:hover {
+  background-color: var(--accent-text-color);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--bg-footer-color);
+}
+
+.footer .studio {
+  color: var(--white-color);
+}
+
+.address a {
+  color: var(--white-color);
+}
+
+.mail a,
+.phone a {
+  color: var(--address-text-color);
+}
+
+.join {
+  color: var(--white-color);
+
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.address,
+.mail,
+.phone {
+  line-height: 1.71;
+}
+
+.subscribe {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* Portfolio */
+
+/* Filter */
+
+.filter button {
+  color: var(--title-text-color);
+  background-color: var(--filter-bg-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+
+.filter button:hover,
+.filter button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-text-color);
+}
+
+/* Cards */
+
+.cards .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.description {
+  color: var(--white-color);
+  background-color: var(--cards-bg-color);
+
+  font-size: 18px;
+  line-height: 1.56;
+}
+
+.category {
+  color: var(--primery-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}

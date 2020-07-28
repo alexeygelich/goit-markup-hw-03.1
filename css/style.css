@@ -23,6 +23,14 @@ body {
 
 .list {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Site nav */
@@ -78,7 +86,12 @@ body {
 }
 
 .hero .title {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--white-color);
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-weight: 900;
   font-size: 44px;
@@ -96,10 +109,14 @@ body {
 }
 
 .hero .button {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin-top: 30px;
+  min-width: 200px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -108,19 +125,35 @@ body {
 /* Work */
 
 .work p {
+  margin-top: 10px;
+  margin-bottom: 0;
   line-height: 1.71;
 }
 
 .work .title {
+  margin-top: 30px;
+  margin-bottom: 0;
   color: var(--title-text-color);
 
   font-weight: 700;
   text-transform: uppercase;
 }
 
+.title.main {
+  margin-top: 94px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 /* What are we doing */
 
+.doing {
+  margin-bottom: 94px;
+}
+
 .doing .title {
+  margin-top: 94px;
+  margin-bottom: 50px;
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -130,11 +163,18 @@ body {
 }
 
 .doing .text {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-block;
+  min-width: 370px;
+  min-height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
   color: var(--white-color);
   background-color: var(--bg-text-color);
 
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -142,9 +182,13 @@ body {
 
 .team {
   background-color: var(--bg-team-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team .title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -154,6 +198,8 @@ body {
 }
 
 .title.name {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -161,14 +207,22 @@ body {
 }
 
 .team p {
+  margin-top: 0;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 
+.team .social {
+  margin-bottom: 24px;
+}
+
 /* Clients */
 
 .clients .title {
+  margin-top: 94px;
+  margin-bottom: 50px;
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -179,6 +233,15 @@ body {
 
 .clients a:hover {
   background-color: var(--accent-text-color);
+}
+
+.clients li {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: inline-block;
+  min-width: 170px;
+  min-height: 90px;
+  text-align: center;
 }
 
 /* Footer */

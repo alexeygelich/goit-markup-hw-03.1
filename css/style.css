@@ -29,7 +29,9 @@ body {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -156,6 +158,22 @@ body {
 }
 
 /* Work */
+
+.work .list {
+  display: flex;
+}
+
+.img-item {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+
+  background-color: var(--filter-bg-color);
+}
+
+.work .item + .item {
+  margin-left: 30px;
+}
 
 .work p {
   margin-top: 10px;

@@ -34,11 +34,22 @@ body {
   margin-right: auto;
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 /* Site nav */
 
 .logo {
-  color: var(--accent-text-color);
+  margin-right: 85px;
 
+  color: var(--accent-text-color);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -50,15 +61,26 @@ body {
   color: var(--title-text-color);
 }
 
-.site-nav a {
-  color: var(--title-text-color);
+.site-nav {
+  display: flex;
+}
 
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--title-text-color);
   font-weight: 500;
   letter-spacing: 0.02em;
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--accent-text-color);
 }
 
@@ -68,15 +90,25 @@ body {
 
 /* Sing in */
 
-.auth-nav a {
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .item + .item {
+  margin-left: 30px;
+}
+
+.auth-nav .link {
+  display: block;
   color: var(--primery-text-color);
 
   font-weight: 500;
   letter-spacing: 0.02em;
 }
 
-.auth-nav a:hover,
-.auth-nav a:focus {
+.auth-nav .link:hover,
+.auth-nav .link:focus {
   color: var(--accent-text-color);
 }
 

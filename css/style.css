@@ -376,6 +376,7 @@ body {
 .footer .container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .logo-footer {
@@ -405,10 +406,6 @@ body {
   margin-top: 9px;
 }
 
-.join {
-  margin-left: 69px;
-}
-
 .join p {
   margin-bottom: 20px;
   margin-top: 0;
@@ -421,10 +418,7 @@ body {
 
 .social-footer {
   display: flex;
-}
-
-.social-footer .item + .item {
-  margin-left: 10px;
+  justify-content: space-between;
 }
 
 .address,
@@ -434,7 +428,6 @@ body {
 }
 
 .subscribe {
-  margin-left: 94px;
   color: var(--white-color);
   font-weight: 700;
   text-align: center;

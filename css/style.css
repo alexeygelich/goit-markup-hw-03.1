@@ -121,7 +121,6 @@ body {
 }
 
 .hero {
-  min-height: 600px;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -237,19 +236,29 @@ body {
 }
 
 .doing .text {
-  margin-top: 0;
-  margin-bottom: 0;
-  display: inline-block;
-  min-width: 370px;
-  min-height: 70px;
   padding-top: 27px;
   padding-bottom: 27px;
+  margin-top: 0;
+  margin-bottom: 0;
   text-align: center;
+
   color: var(--white-color);
   background-color: var(--bg-text-color);
 
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.doing .list {
+  display: flex;
+}
+
+.doing .item + .item {
+  margin-left: 30px;
+}
+
+.doing .item-img {
+  display: block;
 }
 
 /* Team */
@@ -366,6 +375,7 @@ body {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .logo-footer {
@@ -396,7 +406,6 @@ body {
 }
 
 .join {
-  margin-top: 72px;
   margin-left: 69px;
 }
 
@@ -425,7 +434,6 @@ body {
 }
 
 .subscribe {
-  margin-top: 72px;
   margin-left: 94px;
   color: var(--white-color);
   font-weight: 700;

@@ -137,24 +137,31 @@ body {
 }
 
 .button {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  align-items: center;
+  min-width: 200px;
+  border-radius: 4px;
+  border-width: 0;
+  text-align: center;
   color: var(--white-color);
   background-color: var(--accent-text-color);
 
   font-family: Roboto;
 }
 
+.button p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 .hero .button {
-  display: inline-block;
   padding: 10px 32px;
-  border-radius: 4px;
-  margin-top: 30px;
-  min-width: 200px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
 }
 
 /* Work */
@@ -336,7 +343,22 @@ body {
 
 /* Footer */
 .footer {
+  padding-bottom: 60px;
   background-color: var(--bg-footer-color);
+}
+
+.footer .container {
+  display: flex;
+}
+
+.logo-footer {
+  margin-top: 60px;
+}
+
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+  margin-right: 0;
 }
 
 .footer .studio {
@@ -352,11 +374,31 @@ body {
   color: var(--address-text-color);
 }
 
+.contact .item + .item {
+  margin-top: 9px;
+}
+
 .join {
+  margin-top: 72px;
+  margin-left: 69px;
+}
+
+.join p {
+  margin-bottom: 20px;
+  margin-top: 0;
+
   color: var(--white-color);
 
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.social-footer {
+  display: flex;
+}
+
+.social-footer .item + .item {
+  margin-left: 10px;
 }
 
 .address,
@@ -366,14 +408,34 @@ body {
 }
 
 .subscribe {
+  margin-top: 72px;
+  margin-left: 94px;
+  color: var(--white-color);
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.subscribe .title {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.subscribe .img {
+  margin-left: 10px;
 }
 
 /* Portfolio */
+
 .portfolio-title {
   text-align: center;
 }

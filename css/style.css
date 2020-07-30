@@ -188,6 +188,10 @@ img {
   padding-bottom: 94px;
 }
 
+.work .item {
+  width: calc((100% - 90px) / 4);
+}
+
 .work .list {
   display: flex;
 }
@@ -228,6 +232,10 @@ img {
 .doing {
   padding-top: 94px;
   margin-bottom: 94px;
+}
+
+.doing .item {
+  width: calc((100% - 60px) / 3);
 }
 
 .doing .title {
@@ -346,8 +354,7 @@ img {
   justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
-  height: 90px;
+  width: calc((100% - 50px) / 6);
 }
 
 .clients .title {

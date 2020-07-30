@@ -232,9 +232,26 @@ body {
 /* Team */
 
 .team {
-  background-color: var(--bg-team-color);
   padding-top: 94px;
   padding-bottom: 94px;
+
+  background-color: var(--bg-team-color);
+}
+
+.team .list {
+  display: flex;
+}
+
+.team .item + .item {
+  margin-left: 30px;
+}
+
+.social .item + .item {
+  margin-left: 10px;
+}
+
+.team .item {
+  width: calc((100% - 90px) / 4);
 }
 
 .team .title {
@@ -266,6 +283,8 @@ body {
 }
 
 .team .social {
+  display: flex;
+  justify-content: center;
   margin-bottom: 24px;
 }
 

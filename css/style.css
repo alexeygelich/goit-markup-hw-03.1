@@ -116,9 +116,15 @@ body {
 
 /* Hero */
 
-.hero {
-  text-align: center;
+.hero-section {
   background-color: var(--bg-text-color);
+}
+
+.hero {
+  min-height: 600px;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero p {
@@ -127,6 +133,7 @@ body {
 }
 
 .hero .title {
+  padding-bottom: 30px;
   margin-top: 0;
   margin-bottom: 0;
   color: var(--white-color);

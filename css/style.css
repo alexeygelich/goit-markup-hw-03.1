@@ -121,6 +121,11 @@ body {
   background-color: var(--bg-text-color);
 }
 
+.hero p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .hero .title {
   margin-top: 0;
   margin-bottom: 0;
@@ -166,6 +171,11 @@ body {
 
 /* Work */
 
+.work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .work .list {
   display: flex;
 }
@@ -189,8 +199,6 @@ body {
 }
 
 .work .title {
-  margin-top: 30px;
-  margin-bottom: 0;
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -198,7 +206,7 @@ body {
 }
 
 .title.main {
-  margin-top: 94px;
+  margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -206,11 +214,12 @@ body {
 /* What are we doing */
 
 .doing {
+  padding-top: 94px;
   margin-bottom: 94px;
 }
 
 .doing .title {
-  margin-top: 94px;
+  margin-top: 0px;
   margin-bottom: 50px;
   color: var(--title-text-color);
 
@@ -299,6 +308,7 @@ body {
 
 .clients {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .clients .list {
@@ -319,7 +329,7 @@ body {
 }
 
 .clients .title {
-  margin-top: 94px;
+  margin-top: 0px;
   margin-bottom: 50px;
   color: var(--title-text-color);
 

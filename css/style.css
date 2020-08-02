@@ -82,6 +82,7 @@ img {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .logo__studio {
@@ -406,44 +407,51 @@ img {
 
 /* Footer */
 .footer {
+  padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--bg-footer-color);
 }
 
-.footer .container {
+.footer__container {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
 
-.logo-footer {
-  margin-top: 60px;
-}
+/* Footer Logo */
 
-.footer .logo {
+.footer__logo {
   display: block;
   margin-bottom: 20px;
   margin-right: 0;
 }
 
-.footer .studio {
+.footer__studio {
   color: var(--white-color);
 }
 
-.address a {
-  color: var(--white-color);
+/* Contact */
+
+.contact__item {
+  line-height: 1.71;
 }
 
-.mail a,
-.phone a {
+.contact__item--mail,
+.contact__item--phone {
   color: var(--address-text-color);
 }
 
-.contact .item + .item {
-  margin-top: 9px;
+.contact__item--address {
+  color: var(--white-color);
 }
 
-.join p {
+.contact__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+/* Join */
+
+.join__title {
   margin-bottom: 20px;
   margin-top: 0;
 
@@ -453,16 +461,12 @@ img {
   text-transform: uppercase;
 }
 
-.social-footer {
+.join__social {
   display: flex;
   justify-content: space-between;
 }
 
-.address,
-.mail,
-.phone {
-  line-height: 1.71;
-}
+/* Subscribe */
 
 .subscribe {
   color: var(--white-color);
@@ -472,21 +476,31 @@ img {
   text-transform: uppercase;
 }
 
-.subscribe .title {
+.subscribe__title {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.footer .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.subscribe__button {
+  display: inline-flex;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 28px;
+  border-radius: 4px;
+  border-width: 0;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--white-color);
+  background-color: var(--accent-text-color);
 }
 
-.subscribe .img {
-  margin-left: 10px;
+.subscribe__label {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
 }
 
 /* Portfolio */

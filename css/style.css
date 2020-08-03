@@ -156,15 +156,9 @@ img {
   padding-bottom: 200px;
 }
 
-.hero p {
+.hero__title {
   margin-top: 0;
-  margin-bottom: 0;
-}
-
-.hero .title {
-  padding-bottom: 30px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
   color: var(--white-color);
   max-width: 696px;
   margin-left: auto;
@@ -177,9 +171,9 @@ img {
   text-transform: uppercase;
 }
 
-.button {
-  margin-top: 0;
-  margin-bottom: 0;
+.hero__button {
+  display: inline-block;
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -196,49 +190,45 @@ img {
   font-family: Roboto;
 }
 
-.button p {
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.hero .button {
-  padding: 10px 32px;
-}
-
 /* Work */
 
-.work {
+.work-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.work .item {
+.work__item {
   width: calc((100% - 90px) / 4);
 }
 
-.work .list {
+.work {
   display: flex;
 }
 
-.img-item {
+.work__img {
   display: flex;
+  margin-bottom: 30px;
   justify-content: center;
+  align-items: center;
   height: 120px;
+  border-radius: 4px;
 
   background-color: var(--filter-bg-color);
 }
 
-.work .item + .item {
-  margin-left: 30px;
+.work__item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.work p {
-  margin-top: 10px;
+.work__text {
+  margin-top: 0;
   margin-bottom: 0;
   line-height: 1.71;
 }
 
-.work .title {
+.work__title {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -251,18 +241,14 @@ img {
   text-align: center;
 }
 
-/* What are we doing */
+/* employment */
 
-.doing {
+.employment-section {
   padding-top: 94px;
   margin-bottom: 94px;
 }
 
-.doing .item {
-  width: calc((100% - 60px) / 3);
-}
-
-.doing .title {
+.employment__title {
   margin-top: 0px;
   margin-bottom: 50px;
   color: var(--title-text-color);
@@ -273,7 +259,15 @@ img {
   text-align: center;
 }
 
-.doing .text {
+.employment {
+  display: flex;
+}
+
+.employment__item {
+  width: calc((100% - 60px) / 3);
+}
+
+.employment__text {
   padding-top: 27px;
   padding-bottom: 27px;
   margin-top: 0;
@@ -287,44 +281,20 @@ img {
   text-transform: uppercase;
 }
 
-.doing .list {
-  display: flex;
-}
-
-.doing .item + .item {
-  margin-left: 30px;
-}
-
-.doing .item-img {
-  display: block;
+.employment__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Team */
 
-.team {
+.team-section {
   padding-top: 94px;
   padding-bottom: 94px;
 
   background-color: var(--bg-team-color);
 }
 
-.team .list {
-  display: flex;
-}
-
-.team .item + .item {
-  margin-left: 30px;
-}
-
-.social .item + .item {
-  margin-left: 10px;
-}
-
-.team .item {
-  width: calc((100% - 90px) / 4);
-}
-
-.team .title {
+.team__title {
   margin-top: 0;
   margin-bottom: 50px;
   color: var(--title-text-color);
@@ -335,7 +305,24 @@ img {
   text-align: center;
 }
 
-.title.name {
+.team {
+  display: flex;
+}
+
+.team__item {
+  padding-bottom: 24px;
+  width: calc((100% - 90px) / 4);
+  background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team__name {
   margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
@@ -344,7 +331,14 @@ img {
   text-align: center;
 }
 
-.team p {
+.team__social {
+  margin-left: 32px;
+  margin-right: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__text {
   margin-top: 0;
   margin-bottom: 16px;
   font-size: 16px;
@@ -352,37 +346,32 @@ img {
   text-align: center;
 }
 
-.team .social {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 24px;
-}
-
 /* Clients */
 
-.clients {
+.clients-section {
   padding-bottom: 94px;
   padding-top: 94px;
 }
 
-.clients .list {
+.clients {
   display: flex;
 }
 
-.clients .item + .item {
-  margin-left: 30px;
+.clients__item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.clients .item {
+.clients__item {
   display: flex;
   justify-content: center;
+  align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: calc((100% - 50px) / 6);
   min-height: 90px;
 }
 
-.clients .title {
+.clients__title {
   margin-top: 0px;
   margin-bottom: 50px;
   color: var(--title-text-color);
@@ -393,17 +382,14 @@ img {
   text-align: center;
 }
 
-.clients a:hover {
-  background-color: var(--accent-text-color);
+.clients__item:hover {
+  color: var(--accent-text-color);
+  border-color: var(--accent-text-color);
 }
 
-.clients li:last-child {
+/* .clients__item:last-child {
   margin-right: 0;
-}
-
-.company {
-  align-self: center;
-}
+} */
 
 /* Footer */
 .footer {
